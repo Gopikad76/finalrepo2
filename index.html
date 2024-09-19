@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="gopika/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        body {
+            background-color: #343a40;
+            /* dark background */
+            color: black;
+            /* set text color to black */
+        }
+        
+        .modal-body h6 {
+            color: black;
+            /* ensure modal headings are also black */
+        }
+        /* Section Styling with Black Background */
+        
+        #projects-services {
+            padding: 60px 20px;
+            background-color: #000;
+            /* Black background */
+            color: #fff;
+            /* White text for contrast */
+            text-align: center;
+        }
+        
+        #projects-services h2 {
+            font-size: 2.8em;
+            color: #32CD32;
+            /* Light green */
+            margin-bottom: 40px;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+        }
+        /* Project & Service Container */
+        
+        .projects,
+        .services {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-top: 40px;
+        }
+        /* Project and Service Items */
+        
+        .project-item,
+        .service-item {
+            background: #1a1a1a;
+            /* Dark background for items */
+            border: 2px solid #32CD32;
+            /* Green border */
+            border-radius: 15px;
+            padding: 25px;
+            width: 30%;
+            min-width: 250px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 8px rgba(0, 255, 0, 0.2);
+            /* Light green shadow */
+            text-align: left;
+        }
+        
+        .project-item:hover,
+        .service-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 20px rgba(0, 255, 0, 0.3);
+            /* Darker green shadow on hover */
+        }
+        
+        .project-item h3,
+        .service-item h3 {
+            font-size: 1.8em;
+            color: #32CD32;
+            /* Medium green */
+            margin-bottom: 15px;
+            text-transform: capitalize;
+        }
+        
+        .project-item p,
+        .service-item p {
+            font-size: 1em;
+            color: #ccc;
+            line-height: 1.6em;
+        }
+        
+        .project-item:hover h3,
+        .service-item:hover h3 {
+            color: #90EE90;
+            /* Lighter green on hover */
+        }
+        /* Responsive for smaller screens */
+        
+        @media (max-width: 768px) {
+            .project-item,
+            .service-item {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body class="p-3 mb-2 bg-dark text-white ">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <img src="image.png" height="50" width="60" alt="textio" class="img-fluid"><a class="navbar-brand" href="#"><b class="text-success">Iterative Innovators</b></a>
+        <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse d-lg-none" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link col-md-8" href="#overview">Overview</a></li>
+                <li class="nav-item"><a class="nav-link" href="#team">Meet our Team</a></li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects-services">Projects</a>
+
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">contact</a>
+
+                </li>
+
+
+
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-6">
+                <a href="\index2.html">
+                    <img src="\Black and Cyan Blue Simple Game Animated Logo (1).gif" height="650" width="500" class="img-fluid" alt="Profile Image">
+                </a>
+            </div>
+            <div id="overview" class="col-md-6">
+                <h2 style=color:#1DB954>
+                    <center>Overview</center>
+                </h2><br>
+                <h4>Welcome to Our team Iterative Innovators! We are passionate developers with experience in various technologies.At Innovative Iterators, we believe that a well-designed portfolio is more than just a collection of work—it's a story, an experience,
+                    and a gateway to new opportunities. We specialize in creating visually stunning and professional portfolios that reflect your unique journey, skills, and vision.
+                </h4>
+            </div>
+        </div>
+    </div>
+    <section id="team" class="mb-5">
+        <h2 class="text-center mb-4 " style=color:#1DB954>Meet Our Team</h2>
+        <div class="row justify-content-center">
+            <!-- Team Member 1 -->
+            <div class="col-md-2 mb-3">
+                <div class="card">
+                    <img src="member1.jpg" class="card-img-top" alt="Team Member 1" height="200" width="200" data-bs-toggle="modal" data-bs-target="#member1Modal">
+                </div>
+            </div>
+            <!-- Team Member 2 -->
+            <div class="col-md-2 mb-3">
+                <div class="card">
+                    <img src="member2.jpg" class="card-img-top" alt="Team Member 2" height="200" width="200" data-bs-toggle="modal" data-bs-target="#member2Modal">
+                </div>
+            </div>
+            <!-- Team Member 3 -->
+            <div class="col-md-2 mb-3">
+                <div class="card">
+                    <img src="member3.jpg" class="card-img-top" alt="Team Member 3" height="200" width="200" data-bs-toggle="modal" data-bs-target="#member3Modal">
+                </div>
+            </div>
+            <!-- Team Member 4 -->
+            <div class="col-md-2 mb-3">
+                <div class="card">
+                    <img src="member4.jpg" class="card-img-top" alt="Team Member 4" height="200" width="200" data-bs-toggle="modal" data-bs-target="#member4Modal">
+                </div>
+            </div>
+            <!-- Team Member 5 -->
+            <div class="col-md-2 mb-3">
+                <div class="card">
+                    <img src="member5.jpg" class="card-img-top" alt="Team Member 5" height="200" width="200" data-bs-toggle="modal" data-bs-target="#member5Modal">
+                </div>
+            </div>
+            <!-- Team Member 6 -->
+            <div class="col-md-2 mb-3">
+                <div class="card">
+                    <img src="member6.jpg" class="card-img-top" alt="Team Member 6" height="200" width="200" data-bs-toggle="modal" data-bs-target="#member6Modal">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal for Team Member 1 -->
+    <div class="modal fade" id="member1Modal" tabindex="-1" aria-labelledby="member1ModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header text-dark">
+                    <h5 class="modal-title" id="member1ModalLabel">Gopika Accomplishments</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-dark">
+                    <h6>Programming Languages:</h6>
+                    <ul>
+                        <li>Python</li>
+                        <li>HTML</li>
+                        <li>Java</li>
+                        <li>C++</li>
+                    </ul>
+                    <h6>Domain:</h6>
+                    <ul>
+                        <li>ui/ux</li>
+                        <li>web development</li>
+                        <li>data science</li>
+                    </ul>
+                    <h6>projects:</h6>
+                    <ul>
+                        <li>app layout for smart tv</li>
+                        <li>exceling in datas</li>
+                    </ul>
+                    <h6>Data Visualization:</h6>
+                    <ul>
+                        <li>Matplotlib</li>
+                        <li>Seaborn</li>
+                        <li>Tableau</li>
+                        <li>Power BI</li>
+                    </ul>
+                    <h6>Version Control:</h6>
+                    <ul>
+                        <li>Git</li>
+                        <li>GitHub</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Team Member 2 -->
+    <div class="modal fade" id="member2Modal" tabindex="-1" aria-labelledby="member2ModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header text-dark">
+                    <h5 class="modal-title text-dark" id="member2ModalLabel">Sakthi Accomplishments</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-dark">
+                    <h6>Programming Languages:</h6>
+                    <ul>
+                        <li></li>
+                        <li>python</li>
+                        <li>java</li>
+                        <li>c</li>
+                    </ul>
+                    <h6>AI projects</h6>
+                    <ul>
+                        <li>diabetes prediction</li>
+                        <li>cancerous tumour prediction</li>
+                        <li>car validity prediction</li>
+                        <li>ipl winning chance</li>
+                    </ul>
+                    <h6>tools</h6>
+                    <ul>
+                        <li>tensor flow</li>
+                        <li>keras</li>
+                        <li>pytorch</li>
+                    </ul>
+                    <h6>modules:</h6>
+                    <ul>
+                        <li>CNN</li>
+                        <li>Deep learning</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Team Member 3 -->
+    <div class="modal fade" id="member3Modal" tabindex="-1" aria-labelledby="member3ModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content text-dark">
+                <div class="modal-header text-dark">
+                    <h5 class="modal-title" id="member3ModalLabel"> Varshini Accomplishments</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-dark">
+                    <h6>Cloud Technologies:</h6>
+                    <ul>
+                        <li>AWS</li>
+                        <li>Azure</li>
+                        <li>Google Cloud</li>
+                    </ul>
+                    <h6>Tools:</h6>
+                    <ul>
+                        <li>keras</li>
+                        <li>Kubernetes</li>
+                        <li>tensorflow</li>
+                    </ul>
+                    <h6>project:</h6>
+                    <ul>
+                        <li> heart disease prediction</li>
+                        <li>titanic prediction</li>
+                        <li>spam detection</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Team Member 4 -->
+    <div class="modal fade" id="member4Modal" tabindex="-1" aria-labelledby="member4ModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content text-dark">
+                <div class="modal-header text-dark ">
+                    <h5 class="modal-title" id="member4ModalLabel">vanni vignesher Accomplishments</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-dark">
+                    <h6>Data analayst skills</h6>
+                    <ul>
+                        <li>data manipualtion and analysis</li>
+                        <li>Statistical analysis</li>
+                        <li>data management</li>
+                    </ul>
+                    </h6>programming languages</h6>
+                    <ul>
+                        <li>python</li>
+                        <li>R</li>
+                        <li>HTML</li>
+                        <li>SQL</li>
+                        <li>CSS</li>
+                    </ul>
+                    <h6>Data visualization tools</h6>
+                    <ul>
+                        <li>power bi</li>
+                        <li>excel</li>
+                        <li>tableau</li>
+                        <li>seaborn</li>
+                        <li>matplotlib</li>
+                        <h6>projects</h6>
+                        <ul>
+                            <li>ML PROJECTS</li>
+                            <li>Credit card fraud detection</li>
+                            <li>EXCEL</li>
+                            <li>Road accident analysis dashboard</li>
+                            <li>power bi </li>
+                            <li>HR analysis</li>
+                            <li>python</li>
+                            <li>Amazon sales analysis</li>
+                        </ul>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Team Member 5 -->
+    <div class="modal fade" id="member5Modal" tabindex="-1" aria-labelledby="member5ModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header text-dark">
+                    <h5 class="modal-title" id="member5ModalLabel">Thogaivalli Accomplishments</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-dark">
+                    <h6>data analyst skills</h6>
+                    <li>data manipualtion and analysis</li>
+                    <li>Statistical analysis</li>
+                    <li>data management</li>
+                    </h6>programming languages</h6>
+                    <ul>
+                        <li>python</li>
+                        <li>R</li>
+                        <li>HTML</li>
+                        <li>SQL</li>
+                        <li>CSS</li>
+                    </ul>
+                    <h6>Data visualization tools</h6>
+                    <li>power bi</li>
+                    <li>excel</li>
+                    <li>tableau</li>
+                    <li>seaborn</li>
+                    <li>matplotlib</li>
+                    <h6>projects</h6>
+                    <ul>
+                        <li>ML PROJECTS</li>
+                        <li>SMS spam detection</li>
+                        <li>EXCEL</li>
+                        <li>sales analysis on dashboard</li>
+                        <li>power bi </li>
+                        <li>Hotel insight analysis</li>
+                        <li>python</li>
+                        <li>Amazon sales analysis</li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Team Member 6 -->
+    <div class="modal fade" id="member6Modal" tabindex="-1" aria-labelledby="member6ModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content text-dark">
+                <div class="modal-header text-dark">
+                    <h5 class="modal-title" id="member6ModalLabel">Yamini Accomplishments</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-dark">
+                    <h6>Data analyst Skills:</h6>
+                    <ul>
+                        <li>data manipualtion and analysis</li>
+                        <li>Statistical analysis</li>
+                        <li>data management</li>
+                    </ul>
+                    </h6>programming languages</h6>
+                    <ul>
+                        <li>python</li>
+                        <li>R</li>
+                        <li>HTML</li>
+                        <li>SQL</li>
+                        <li>CSS</li>
+                    </ul>
+                    <ul>
+                        <h6>Data visualization tools</h6>
+                        <li>power bi</li>
+                        <li>excel</li>
+                        <li>tableau</li>
+                        <li>seaborn</li>
+                        <li>matplotlib</li>
+                    </ul>
+                    <h6>projects</h6>
+                    <ul>
+                        <li>ML PROJECTS: </li>
+                        <li></li>
+                        <li>credit card fraud detection</li>
+                        <li></li>
+                    </ul>
+                    <h6>projects</h6>
+                    <ul>
+                        <li>ML PROJECTS</li>
+                        <li>sales prediction</li>
+                        <li>EXCEL</li>
+                        <li>HR analysis</li>
+                        <li>power bi </li>
+                        <li>Car sales analysis</li>
+                        <li>python</li>
+                        <li> sales analysis</li>
+                    </ul>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <section id="projects-services">
+        <h2>Our Projects</h2>
+        <div class="projects">
+            <div class="project-item">
+                <h3>Project 1: AI-Powered Medical Assistance Drone</h3>
+                <p>Developed a drone integrated with AI to assist in medical emergencies, enabling real-time assistance and diagnostics.</p>
+            </div>
+            <div class="project-item">
+                <h3>Project 2: Data-Driven Market Insights</h3>
+                <p>Used advanced data analytics and machine learning to deliver actionable business insights for targeted market strategies.</p>
+            </div>
+            <div class="project-item">
+                <h3>Project 3: End-to-End Web Development Solution</h3>
+                <p>Designed and built a fully responsive and scalable web application for modern businesses, from frontend to backend solutions.</p>
+            </div>
+        </div>
+
+        <h2>Our Services</h2>
+        <div class="services">
+            <div class="service-item">
+                <h3>Full Stack Development</h3>
+                <p>Offering complete web development solutions, from user-friendly front-end interfaces to robust back-end systems.</p>
+            </div>
+            <div class="service-item">
+                <h3>AI & Machine Learning Solutions</h3>
+                <p>Providing innovative AI and machine learning models for real-world automation, problem-solving, and decision-making.</p>
+            </div>
+            <div class="service-item">
+                <h3>Data Analysis & Visualization</h3>
+                <p>Transforming data into actionable insights with advanced analytics and visualizations, helping businesses make informed decisions.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="contact" style="background: linear-gradient(135deg); color: white; padding: 50px 0;">
+        <div class="container">
+            <h2 class="text-center mb-4" style="color: #fff; font-size: 2.5rem; letter-spacing: 1px;">Contact Our Innovative Team</h2>
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-7">
+                    <form>
+                        <div class="form-group mb-3">
+                            <label for="name" style="font-size: 1.2rem;">Name</label>
+                            <input type="text" class="form-control" id="name" required placeholder="Enter your name" style="border-radius: 10px;">
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="email" style="font-size: 1.2rem;">Email</label>
+                            <input type="email" class="form-control" id="email" required placeholder="Enter your email" style="border-radius: 10px;">
+                        </div>
+                        <div class="form-group mb-4">
+                            <label for="message" style="font-size: 1.2rem;">Message</label>
+                            <textarea class="form-control" id="message" rows="4" required placeholder="Type your message here" style="border-radius: 10px;"></textarea>
+                        </div>
+                        <div class="text-center text-success">
+                            <button type="submit" class="btn btn-lg" style="background-color: #fff; border-radius: 50px; padding: 10px 40px; font-weight: bold; box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);">
+                                Send Message
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <footer class="text-center mt-5 ">
+        <p>&copy; 2024 My Portfolio. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js "></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js "></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js "></script>
+
+</body>
+
+</html>
